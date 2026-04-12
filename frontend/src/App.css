@@ -1,0 +1,400 @@
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 14px;
+  z-index: 1000;
+  padding: 8px 12px;
+  border: 1px solid var(--ink-900);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink-900);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 249, 240, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  color: var(--ink-900);
+  font-family: var(--display);
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--ink-800);
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.nav-links a.active {
+  border-color: var(--line);
+  background: #fff;
+}
+
+.role-pill {
+  font-size: 0.82rem;
+  border: 1px solid var(--line);
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--ink-700);
+}
+
+.page-body {
+  margin-top: 20px;
+}
+
+.hero-card {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(140deg, #fff6e9 0%, #f2f8ff 100%);
+  padding: 28px;
+}
+
+.hero-card h1 {
+  margin: 8px 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 0.72rem;
+  color: var(--ink-600);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stats-grid article {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  background: #fff;
+}
+
+.stats-grid p {
+  margin: 0;
+  color: var(--ink-600);
+}
+
+.stats-grid strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink-900);
+  font-size: 1.1rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.product-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 16px;
+}
+
+.product-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.auth-card {
+  max-width: 760px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+  padding: 24px;
+}
+
+.checkout-card {
+  max-width: 760px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 18px;
+}
+
+.checkout-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--ink-800);
+  font-weight: 600;
+}
+
+.checkout-card input {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 10px;
+  font: inherit;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.two-cols {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--ink-800);
+  font-weight: 600;
+}
+
+.form-grid input,
+.form-grid select,
+.filters input,
+.filters select,
+table input,
+table select {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 10px;
+  font: inherit;
+}
+
+button {
+  border: 1px solid var(--ink-800);
+  background: var(--ink-900);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #2c6ed7;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.ghost-btn {
+  background: #fff;
+  color: var(--ink-900);
+}
+
+.danger {
+  background: #8b2a2a;
+  border-color: #8b2a2a;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filters input {
+  min-width: 220px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+th {
+  color: var(--ink-700);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.row-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row-actions input {
+  width: 72px;
+}
+
+.row-actions .inline-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.empty-row {
+  text-align: center;
+  color: var(--ink-600);
+}
+
+.stack-lg,
+.stack-md,
+.stack-sm {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack-lg {
+  gap: 18px;
+}
+
+.stack-md {
+  gap: 12px;
+}
+
+.stack-sm {
+  gap: 8px;
+}
+
+.error-text {
+  color: #9c2f2f;
+  margin: 0;
+}
+
+.success-text {
+  color: #1e7b45;
+  margin: 0;
+}
+
+.hint-text {
+  margin: 0;
+  color: var(--ink-600);
+}
+
+.inline-link {
+  color: var(--ink-900);
+  font-weight: 600;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    padding: 14px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats-grid,
+  .cards-grid,
+  .two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .span-two {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    padding: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .row-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .row-actions button,
+  .row-actions .inline-link,
+  .ghost-btn {
+    width: 100%;
+  }
+}
